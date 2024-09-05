@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Timeline</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .timeline {
+            position: relative;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left:100px;
+        }
+        .timeline::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 1rem;
+            width: 2px;
+            background-color: #dee2e6;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+
+        }
+        .timeline-item::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: -0.75rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #007bff;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .timeline-itemNew::before {
+            content: " Step 1";
+            position: absolute;
+            top: 30;
+            left: -5rem;
+            width: 3rem;
+            height: 3rem;
+            
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .timeline-item-content {
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 0.5rem;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Vertical Timeline</h1>
+        <div class="timeline">
+        <div class="timeline-itemNew"> 
+        
+            <div class="timeline-item">
+            
+                <div class="timeline-item-content">
+                    <h5>2024: NASA's Artemis II Mission</h5>
+                    <p>NASA's Artemis II mission is the first crewed flight of the Space Launch System (SLS) and Orion spacecraft, marking the beginning of a new era in lunar exploration.</p>
+                </div>
+            </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-item-content">
+                    <h5>2021: James Webb Space Telescope Launch</h5>
+                    <p>The James Webb Space Telescope (JWST) was launched on December 25, 2021. It is designed to observe the universe in infrared, offering new insights into the formation of stars and galaxies.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-item-content">
+                    <h5>2012: Curiosity Rover Lands on Mars</h5>
+                    <p>NASA's Curiosity rover successfully landed on Mars on August 6, 2012. It began its mission to explore the Gale Crater and assess Mars' habitability.</p>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
